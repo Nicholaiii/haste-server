@@ -18,10 +18,17 @@ describe('RandomKeyGenerator', () => {
       const gen = new Generator();
 
       const key = gen.createKey(3);
+      const consonantStart = consonants.includes(key[0])
 
-      assert.ok(consonants.includes(key[0]));
-      assert.ok(consonants.includes(key[2]));
-      assert.ok(vowels.includes(key[1]));
+      if (consonantStart) {
+        assert.ok(consonants.includes(key[0]));
+        assert.ok(consonants.includes(key[2]));
+        assert.ok(vowels.includes(key[1]));
+      } else {
+        assert.ok(vowels.includes(key[0]));
+        assert.ok(vowels.includes(key[2]));
+        assert.ok(consonants.includes(key[1]));
+      }
     });
   });
 });
