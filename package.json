@@ -1,6 +1,7 @@
 {
   "name": "haste",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "main": "server.js",
   "private": true,
   "description": "Private Pastebin Server",
   "keywords": [
@@ -8,11 +9,10 @@
     "pastebin"
   ],
   "author": {
-    "name": "John Crepezzi",
-    "email": "john.crepezzi@gmail.com",
-    "url": "http://seejohncode.com/"
+    "name": "Nicholai Nissen",
+    "email": "nicholainissen@gmail.com",
+    "url": "https://nicholai.dev"
   },
-  "main": "haste",
   "dependencies": {
     "busboy": "0.2.4",
     "connect": "^3.7.0",
@@ -30,7 +30,6 @@
     "proxyquire": "^2.1.3",
     "redis-mock": "^0.56.3"
   },
-  "bundledDependencies": [],
   "bin": {
     "haste-server": "./server.js"
   },
