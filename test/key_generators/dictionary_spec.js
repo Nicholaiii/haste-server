@@ -21,7 +21,7 @@ describe('RandomKeyGenerator', function() {
     });
 
     it('should return a key of the proper number of words from the given dictionary', () => {
-      const path = '/tmp/haste-server-test-dictionary';
+      const path = '../../tmp';
       const words = ['cat'];
       fs.writeFileSync(path, words.join('\n'));
 
